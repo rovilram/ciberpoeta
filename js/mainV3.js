@@ -23,7 +23,6 @@ const getVerseNumber = (verseNum) => {
 }
 
 const getRandomStanza = (books, verseNum) => {
-
     const verseArray = [];
     do {
         const bookSelector = Math.round(Math.random() * (books.length-1));
@@ -36,7 +35,6 @@ const getRandomStanza = (books, verseNum) => {
         }
     }
     while (verseArray.length < verseNum);
-
     return verseArray;
 }
 
@@ -57,22 +55,18 @@ const writePoem = (stanzasArray, poemDiv) => {
     const newPoemDiv = createNode("div", {
         className: poemDiv.className
     });
-    console.log("stanzasArray",stanzasArray)
     stanzasArray.forEach(stanza => {
-        console.log("stanza", stanza)
         const stanzaDiv = createNode("div", {
             className: "stanza"
         });
         stanza.forEach(verse => {
-            console.log(verse)
             createNode("div", {
                 className: "verse",
                 innerText: verse
-            }, stanzaDiv);
+            }, newPoemDiv);
         });
-        newPoemDiv.appendChild(stanzaDiv);
+        poemDiv.replaceWith(newPoemDiv);
     })
-    poemDiv.replaceWith(newPoemDiv);
 }
 
 
@@ -88,8 +82,21 @@ d.querySelector(".generatorBtn")
         const poemDiv = d.querySelector(".poemWrapper");
         let poemObject;
 
+        /*         switch (titleNum) {
+                    case "1":
+                        poemObject = romanceroGitano;
+                        console.log(titleNum, poemObject);
+                        break;
+                    case "2":
+                        poemObject = poetaEnNuevaYork;
+                        break;
+        
+                } */
+
+
+
         const stanzasArray = randomPoem(books, stanzasNum, verseNum);
-        console.log(stanzasArray)
+
 
         writePoem(stanzasArray, poemDiv);
 
