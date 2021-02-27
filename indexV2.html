@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ciberPoeta en Nueva York V1</title>
+    <title>ciberPoeta en Nueva York V2</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -21,13 +21,23 @@
                     <option value="3">3</option>
                 </select>
             </div>
-            <div class="titleWrapper">
+<!--             <div class="titleWrapper">
                 <label for="stanzaTitle">Obra:</label>
                 <select name="title" id="stanzaTitle">
                     <option value="1">Romancero gitano</option>
                     <option value="2">Poeta en Nueva York</option>
                 </select>
+            </div> -->
+            <div class="versoWrapper">
+                <label for="versoSelect">Número de versos por estrofa:</label>
+                <select name="versoNum" id="versoSelect">
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="random">Aleatorio</option>
+                </select>
             </div>
+
             <button class="generatorBtn">
                 Generar Poema
             </button>
@@ -41,8 +51,8 @@
 
 
 
-    <script type="module" src="js/mainV1.js"></script>
-    <script src="dataObjects.js"></script>
+    <script type="module" src="js/mainV2.js"></script>
+    <script src="dataObjectsV2.js"></script>
 
 </body>
 

@@ -1,6 +1,6 @@
 # ciberpoeta
 https://rovilram.github.io/ciberpoeta/
--- Mínimo (versión 1.0) --
+-- Mínimo (versión 1.0) -- https://rovilram.github.io/ciberpoeta/indexV1.html
 
 Se pide implementar una aplicación web frontend que pida al usuario dos datos:
 
