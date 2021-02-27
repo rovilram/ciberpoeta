@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ciberPoeta en Nueva York</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="form">
+        <form action="#">
+            <div class="stanzaWrapper">
+                <label for="stanzaSelect">Número de estrofas:</label>
+                <select name="stanzasNum" id="stanzaSelect">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="titleWrapper">
+                <label for="stanzaTitle">Obra:</label>
+                <select name="title" id="stanzaTitle">
+                    <option value="1">Romancero gitano</option>
+                    <option value="2">Poeta en Nueva York</option>
+                </select>
+            </div>
+            <button class="generatorBtn">
+                Generar Poema
+            </button>
+        </form>
+    </div>
+
+
+
+    <div class="poemWrapper"></div>
+
+
+
+
+    <script type="module" src="js/main.js"></script>
+    <script src="dataObjects.js"></script>
+
+</body>
+
+</html>
