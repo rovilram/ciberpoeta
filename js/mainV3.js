@@ -62,10 +62,11 @@ const writePoem = (stanzasArray, poemDiv) => {
             createNode("div", {
                 className: "verse",
                 innerText: verse
-            }, newPoemDiv);
+            }, stanzaDiv);
         });
-        poemDiv.replaceWith(newPoemDiv);
+        newPoemDiv.appendChild(stanzaDiv);
     })
+    poemDiv.replaceWith(newPoemDiv);
 }
 
 
