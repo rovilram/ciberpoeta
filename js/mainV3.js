@@ -109,7 +109,7 @@ const printForm = (formWrapper, d) => {
     //SELECT AUTOR
     const authorDiv = createNode("div", {
         className: "authorWrapper"
-    }, formWrapper);
+    }, form);
 
     createNode("label", {
         htmlFor: "authorSelect",
@@ -142,7 +142,7 @@ const printForm = (formWrapper, d) => {
     //SELECT ESTROFAS
     const stanzaDiv = createNode("div", {
         className: "stanzaWrapper"
-    }, formWrapper);
+    }, form);
 
     createNode("label", {
         htmlFor: "stanzaSelect",
@@ -173,7 +173,7 @@ const printForm = (formWrapper, d) => {
     //SELECT VERSO
     const verseDiv = createNode("div", {
         className: "versoWrapper"
-    }, formWrapper);
+    }, form);
 
     createNode("label", {
         htmlFor: "versoSelect",
@@ -211,7 +211,7 @@ const printForm = (formWrapper, d) => {
     const generatorBtn = createNode("button", {
         className: "generatorBtn",
         innerText: "Generar poema"
-    }, formWrapper)
+    }, form)
 
     //EVENTO BOTÓN
     generatorBtn.addEventListener("click", (e) => {
@@ -258,7 +258,7 @@ const printForm = (formWrapper, d) => {
             ]
             if (bookDiv) bookDiv.remove();
             bookDiv = createSelectBooks(booksArray);
-            authorSelect.after(bookDiv);
+            authorSelect.parentNode.after(bookDiv);
         }
         else if (authorSelect.value === "castro") {
             const booksArray = [
