@@ -86,7 +86,6 @@ d.querySelector(".generatorBtn")
         const verseNum = d.querySelector("#versoSelect").value;
 
         const poemDiv = d.querySelector(".poemWrapper");
-        let poemObject;
 
         const stanzasArray = randomPoem(books, stanzasNum, verseNum);
         console.log(stanzasArray)
