@@ -273,7 +273,7 @@ const printForm = (formWrapper, d) => {
             ]
             if (bookDiv) bookDiv.remove();
             bookDiv = createSelectBooks(booksArray);
-            authorSelect.after(bookDiv);
+            authorSelect.parentNode.after(bookDiv);
         }
         else if (authorSelect.value === "ambos") {
             bookDiv.remove();
@@ -307,6 +307,9 @@ const main = (d) => {
 
 //---------------------------------EVENTO DE CARGA-------------------------------
 
+
+
+
 window.addEventListener("load", () => {
     const d = document;
     console.log("INIT")
@@ -314,38 +317,3 @@ window.addEventListener("load", () => {
 })
 
 
-/* //EVENTOS
-d.querySelector(".generatorBtn")
-    .addEventListener("click", (e) => {
-        e.preventDefault();
-
-        const stanzasNum = d.querySelector("#stanzaSelect").value;
-        const verseNum = d.querySelector("#versoSelect").value;
-
-        const poemDiv = d.querySelector(".poemWrapper");
-        let poemObject;
-
-                 switch (titleNum) {
-                    case "1":
-                        poemObject = romanceroGitano;
-                        console.log(titleNum, poemObject);
-                        break;
-                    case "2":
-                        poemObject = poetaEnNuevaYork;
-                        break;
-
-                }
-
-
-
-        const stanzasArray = randomPoem(books, stanzasNum, verseNum);
-
-
-        writePoem(stanzasArray, poemDiv);
-
-
-
-
-    })
-
- */
