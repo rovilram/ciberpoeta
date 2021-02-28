@@ -15,13 +15,13 @@ http://www.chiquitoipsum.com/
 https://www.minionsipsum.com/
 https://www.rimador.net/index-poesia-automatica.php
 
--- Deseable (versión 2.0) --
+-- Deseable (versión 2.0) -- https://rovilram.github.io/ciberpoeta/indexV2.html
 
 Añadir un campo más que pida al usuario número de "Versos" por cada estrofa, pudiendo elegir entre 2, 3, 4 o aleatorio (siendo este último un número de 2 a 4, determinado para cada estrofa).
 
 Por otro lado, cada estrofa generada será una combinación aleatoria de versos escogidos de ambas obras (tantos como se indiquen en el campo anterior), así que el campo "Obra" no aparece en esta versión, ya que no tiene sentido.
 
--- Máximo (versión 3.0) --
+-- Máximo (versión 3.0) -- https://rovilram.github.io/ciberpoeta/indexV3.html
 
 Añadir un campo más que pida al usuario el/la "Autor/a", pudiendo elegir entre: "Federico García Lorca", "Rosalía de Castro" o "Ambos".
 
